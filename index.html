@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="script.css">
+  <title>LeetCode Revision App</title>
+
+  <link rel="icon" href="images.png" type="image/png">
+
+</head>
+
+<body>
+
+  <main class="app">
+
+    <img src="images.png" alt="LeetCode Icon" class="leetcode-icon">
+
+    <div class="question-count-box">
+      <span id="question-count">0</span> Questions
+    </div>
+
+    <div class="container">
+      <div class="heading">
+        <h1 class="right-align">LeetCode Revision App</h1>
+      </div>
+      <div class="date-year right-align">
+        <span id="date"></span>
+        <span id="year"></span>
+      </div>
+
+      <div id="search">
+        <div>
+          <input type="text" id="question" placeholder="Enter the question_link...">
+        </div>
+        <div>
+          <select id="category">
+            <option value="doneByMe">Done by me</option>
+            <option value="algorithmOnline">seen algorithm</option>
+            <option value="solutionOnline">seen solution</option>
+          </select>
+        </div>
+        <div>
+          <button id="enter">Add</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="question-list"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="left">
+      <span>LeetCode</span>
+    </div>
+    <div class="right">
+      <span>Created by - Tarunpreet Kaur</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

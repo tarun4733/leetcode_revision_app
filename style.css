@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* #008000, dark green for boundaries */
+  body {
+    background-color: #f5f5f5; /* Off-white background */
+    font-family: 'Montserrat', sans-serif; /* Classy font 'Montserrat' */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+
+.date-year {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #008000; /* Dark green text color */
+  font-size: 16px;
+}
+
+/* Existing styles remain the same */
+
+  button {
+    height: fit-content;
+    cursor: pointer;
+    color: #008000;
+    background-color: #c9d1c8;
+    border: 2px solid #008000; /* Slightly thicker dark green border */
+  }
+  /* ... (existing styles) */
+
+.color-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/* Styles for light red */
+.color-box[style*="background-color: #FFB3B3"] {
+  background-color: #FFB3B3; /* Light red */
+}
+
+/* Styles for light green */
+.color-box[style*="background-color: #CCFFCC"] {
+  background-color: #CCFFCC; /* Light green */
+}
+
+/* Styles for light purple */
+.color-box[style*="background-color: #E6E6FA"] {
+  background-color: #E6E6FA; /* Light purple */
+}
+
+/* ... (existing styles) */
+
+  .app {
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+    color: #008000; /* Dark green text color */
+  }
+  
+  .input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #008000; /* Dark green text color */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 10px 0px;
+  }
+  
+  .to-do-input input {
+    width: 250px;
+    font-family: inherit;
+    border: 2px solid #008000; /* Slightly thicker dark green border */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background-color: #c9d1c8; /* Light green background */
+    color: #04202c; /* Dark green text color */
+  }
+  
+  .to-do-input button {
+    color: #008000; /* Dark green text color */
+    font-family: inherit;
+    border: 2px solid #008000; /* Slightly thicker dark green border */
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #c9d1c8; /* Light green background */
+    cursor: pointer;
+  }
+  
+.category-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+  .to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .to-do-list i {
+    color: #008000; /* Dark green icon color */
+    cursor: pointer;
+  }
+  
+  .to-do-list .fa-pen-to-square {
+    color: #008000; /* Dark green edit icon color */
+  }
+  
+
+  .leetcode-icon {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .to-do-list button {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    background-color: #c9d1c8; /* Light green background */
+    color: #04202c; /* Dark green text color */
+  }
+  
+.question-count-box {
+  position: absolute;
+  top: 10px;
+  left: 150px; /* Adjust the left position to place it at the top left corner */
+  background-color: #008000; /* Dark green background */
+  color: #f5f5f5; /* Off-white text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #008000; /* Slightly thicker dark green border */
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-controller {
+    display: flex;
+    gap: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+    justify-content: space-between;
+  }
+  
+  .input-controller textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    line-height: 1.4;
+    color: #008000; /* Dark green text color */
+    border-radius: 10px;
+    background-color: #c9d1c8; /* Light green background */
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 5px #008000; /* Dark green box-shadow when textarea is focused */
+  }
+  
+  .edit-controller {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .update-controller {
+    display: none;
+  }
+
+  /* .to-do-input right-align {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+  
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3fbb53; /* Off-white background */
+  padding: 10px;
+  border-top: 2px solid #008000; /* Dark green top border */
+  height: 30px; /* Fixed height for the footer */
+}
+  .footer .left {
+    text-align: left;
+  }
+  
+  .footer .right {
+    text-align: right;
+  }
+  
+  
+  #search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    background-color: #f5f5f5; /* Off-white background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #search input[type="text"],
+  #search select {
+    padding: 10px;
+    border: 2px solid #008000; /* Dark green border */
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  #search button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #008000; /* Dark green background */
+    color: #f5f5f5; /* Off-white text color */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #search button:hover {
+    background-color: #005700; /* Dark green with lighter shade on hover */
+  }
+  
+  /* Optional: Add some spacing between elements */
+  #search div {
+    margin-right: 10px;
+  }
+  
+  
+  @media(max-width: 768px) {
+    .app {
+      width: 95%;
+      text-align: center;
+    }
+  
+    .input-header {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+  
+    .to-do-input {
+      display: flex;
+    }
+  
+    .to-do-input input {
+      width: 300px;
+    }
+  }
+  
